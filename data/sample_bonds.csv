@@ -1,0 +1,4 @@
+name,face,coupon_rate,price,ytm,maturity_years,freq
+UST_5Y,1000,0.035,980,,5,2
+Corp_A_7Y,1000,0.055,1025,,7,2
+Muni_B_10Y,1000,0.045,950,,10,2

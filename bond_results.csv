@@ -1,0 +1,7 @@
+@'
+name,face,coupon_rate,price,ytm,maturity_years,freq
+UST_5Y,1000,0.035,980,,5,2
+Corp_A_7Y,1000,0.055,1025,,7,2
+'@ | Out-File -Encoding ASCII mybonds.csv
+
+python -m bondtool.main_cli bond --file mybonds.csv --out bond_results.csv

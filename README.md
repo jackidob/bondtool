@@ -1,0 +1,31 @@
+# Bond / Portfolio Calculator (Starter Kit)
+
+A clean starter project you can open in **Visual Studio Code**. It computes:
+- Single-bond **price**, **yield to maturity (YTM)**, **Macaulay/Modified duration**, **convexity**
+- **Portfolio analytics**: weights, expected return, variance, stdev
+- **Efficient frontier** plot for a set of assets (with or without a risk‑free asset)
+- Simple **CLI** (`python -m src.main_cli`) to run common tasks
+
+## Quickstart
+1. Create a virtual environment (optional but recommended)
+   ```bash
+   python -m venv .venv
+   source .venv/bin/activate   # Windows: .venv\Scripts\activate
+   ```
+2. Install requirements
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Try the examples
+   ```bash
+   # Bond analytics from sample CSV
+   python -m src.main_cli bond --file data/sample_bonds.csv
+
+   # Efficient frontier from sample assets
+   python -m src.main_cli frontier --file data/sample_assets.csv --points 100
+
+   # Portfolio stats from weights
+   python -m src.main_cli portfolio --file data/sample_assets.csv --weights "[0.3,0.4,0.3]"
+   ```
+
+Open the folder in **VS Code**, run, edit, and extend.
